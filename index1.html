@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Just Reue </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="shortcut-icon" href="icon.ico" type="image/x-icon"
+</head>
+<style>
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html, body
+{
+    margin: 0px;
+}
+
+header, footer
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+    background: #555;
+}
+
+header h1
+{
+    color: #AAA;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+header span
+{
+    color: #222;
+}
+
+footer span
+{
+  color: #AAA;
+}
+
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+}
+
+div.container a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.teal
+{
+    background: #000000;
+}
+/* Border from Y to X  */
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #ffffff;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 1px;
+    width: 25%;
+}
+h1 {
+	font-family: Handlee;
+	font-size: 100px;
+	text-align: center;
+}
+#rig {
+    max-width:1500px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:100%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 100%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 10px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width: 100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:30px;
+    font-weight:bold;
+    font-family: Handlee;
+    font-weight:normal!important;
+    top: 40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+</style>
+</head>
+<body>
+<div class="container teal borderYtoX" style="text-align:right">
+  <a href="index1.html">HOME</a>
+  <a href="indexabout.html">ABOUT</a>
+  <a href="indexcontact.html">CONTACT</a>
+</div>
+<br />
+<br />
+<br />
+ <div class="w3-container w3-center w3-animate-left">
+  <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18556944_1136070646538205_1531072671638735614_n.jpg?oh=e5e22591797f9c8f8d1802ea021a4638&oe=59BFB3CF" style="width:1000px;height:380px;">
+  </div>
+  <div class="w3-container w3-center w3-animate-right">
+  <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18485315_1136074363204500_1016448155741401205_n.jpg?oh=61afbaa198fbb59dac65e0a833c5ce65&oe=59B84FD2" style="width:1000px;height:380px;">
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1> EXPLORE. LEARN. 
+  <br />CAPTURE. </h1>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+<ul id="rig">
+    <li>
+        <a class="rig-cell" href="index2.html">
+            <img class="rig-img" src="http://artifex.ru/wp-content/uploads/2015/03/Alexey_Menschikov_003.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Black and White</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index3.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18698399_1140281909450412_8025756012469755091_n.jpg?oh=51862d1b22f6090f5457cd4d8753b47d&oe=59BAE3C6">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Vintage</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index4.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18664308_1140284266116843_2713215617651275895_n.jpg?oh=c2a628566a8655793534e320006d4ec4&oe=59AB631B">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Architecture</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index5.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18582579_1140297199448883_634449270779675038_n.jpg?oh=f52fa08d481ad231df71fb50d30eb5bc&oe=59A0B20E">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Fireworks</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index6.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18485865_1140298209448782_5867578911925293935_n.jpg?oh=c29a795eaf422431fa41be8c87267087&oe=59A75E4A">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Trees</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index7.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18620133_1140299659448637_604746129953442386_n.jpg?oh=e9fca467fbb4500407dec7a99cc5e6d4&oe=59AF469D">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Landscapes</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index8.html">
+            <img class="rig-img" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/18582115_1140395192772417_808829221920051083_n.jpg?oh=fc47df049dffaa97e1647cb7c6478071&oe=59A59EFB">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Neon</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index9.html">
+            <img class="rig-img" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/18581735_1140398986105371_1017844689305357920_n.jpg?oh=16554f74250464c2c9bebbaf0e6813c3&oe=59B02D65">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Urban Fashion</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index10.html">
+            <img class="rig-img" src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.0-9/18699932_1140401392771797_1942754424374809482_n.jpg?oh=a7d9e3b894ca1b95fe8a4ece97bfac3b&oe=59B101C1">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">People</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index11.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18582392_1140964349382168_5721854326900403234_n.jpg?oh=abc76ef5c838cb792f1ad9bf9fe4af94&oe=59AC6F4B">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Winter</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index12.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18582350_1140968742715062_5459109239722527565_n.jpg?oh=440d0230d2479f42d94d6725a2762a1c&oe=59A67AE3">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Panorama</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" href="index13.html">
+            <img class="rig-img" src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.0-9/18582434_1140970429381560_6792953383147030510_n.jpg?oh=d212fff629240004cfe583dbadef6bff&oe=599BDC89">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Sky</span>
+        </a>
+    </li>
+</ul>
+<br />
+<br />
+<br />
+</body>
+</html>	
